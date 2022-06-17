@@ -3,6 +3,7 @@ import "react-multi-carousel/lib/styles.css"
 import { Divider } from '@mui/material';
 import './slide.css'
 import { NavLink } from 'react-router-dom'
+import {Filter} from './Filter'
 //import {products} from './productdata'
 //import Carousel from 'react-material-ui-carousel';
 
@@ -25,8 +26,7 @@ const Slide = ({ title, products }) => {
   return (
     <div className='products_section'>
       <div className='products_deal'>
-        <h3>{title}</h3>
-        <button className='view_btn'>View All</button>
+        <Filter/>
       </div>
       <Divider />
 
